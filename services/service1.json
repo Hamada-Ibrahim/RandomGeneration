@@ -1,0 +1,197 @@
+{
+  "ServiceID": 1,
+  "UserID": 8,
+  "UserPriority": 3,
+  "StartDate": "2018-2-13",
+  "Time": "6-36-00",
+  "Period": 16,
+  "RepeatEvery": [
+    "Mo",
+    "Su"
+  ],
+  "EndDate": "2018-9-14",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 4,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice19",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_IDevice16",
+          "value": "Lab2_IDevice12"
+        },
+        {
+          "DeviceName": "Lab2_IDevice9",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IDevice20",
+          "operation": "<",
+          "value": "20"
+        },
+        {
+          "DeviceName": "Lab3_IDevice8",
+          "operation": "=",
+          "value": "35"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice10",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab3_IDevice11",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 3,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice4",
+          "operation": "<=",
+          "value": "37"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice3",
+          "value": "Lab1_BDevice20"
+        },
+        {
+          "DeviceName": "Lab1_BDevice2",
+          "value": "Lab1_BDevice16"
+        },
+        {
+          "DeviceName": "Lab1_BDevice19",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab1_IDevice2",
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 4,
+      "Priority": 4,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BDevice16",
+          "operation": "=",
+          "value": "Office2_BDevice18"
+        },
+        {
+          "DeviceName": "Office2_IDevice12",
+          "operation": "<",
+          "value": "Office2_IDevice5"
+        }
+      ],
+      "actionGroup": [
+        
+        {
+          "DeviceName": "Office2_BDevice10",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office2_IDevice4",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 5,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BDevice10",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office2_BDevice19",
+          "operation": "=",
+          "value": "Office2_BDevice6"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BDevice5",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 6,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice5",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BDevice2",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice13",
+          "value": "Lab2_BDevice5"
+        },
+        {
+          "DeviceName": "Lab2_BDevice12",
+          "value": "Lab2_BDevice2"
+        },
+        {
+          "DeviceName": "Lab2_BDevice14",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 7,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice4",
+          "operation": "<=",
+          "value": "37"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice19",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

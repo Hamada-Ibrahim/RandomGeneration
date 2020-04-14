@@ -1,0 +1,45 @@
+{
+  "Policy_ID": 7,
+  "UserID": 28,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office4",
+      "DeviceName": "Office4_IDevice10",
+      "Min": [
+        "18",
+        ">="
+      ],
+      "Max": [
+        "38",
+        "<"
+      ]
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice2",
+          "operation": ">=",
+          "value": "Lab1_IDevice16"
+        },
+        {
+          "DeviceName": "Lab1_IDevice17",
+          "operation": ">",
+          "value": "26"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice10",
+          "value": "22"
+        },
+        {
+          "DeviceName": "Lab1_BDevice3",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

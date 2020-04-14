@@ -1,0 +1,34 @@
+{
+  "Policy_ID": 6,
+  "UserID": 5,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab5_IDevice18",
+          "operation": ">",
+          "value": "23"
+        }
+      ],
+      "actionGroup": [{
+          "DeviceName": "Lab3_IDevice7",
+          "value": "Lab3_IDevice11"
+        }]
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Hall5",
+      "DeviceName": "Hall5_IDevice14",
+      "Min": [
+        "11",
+        ">="
+      ],
+      "Max": [
+        "13",
+        "<"
+      ]
+    }
+  ]
+}

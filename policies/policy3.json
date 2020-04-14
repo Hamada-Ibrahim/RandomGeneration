@@ -1,0 +1,61 @@
+{
+  "Policy_ID": 3,
+  "UserID": 27,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office4",
+      "DeviceName": "Office4_IDevice15",
+      "Min": [
+        "13",
+        ">"
+      ],
+      "Max": [
+        "24",
+        "<="
+      ]
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Office5",
+      "DeviceName": "Office5_IDevice18",
+      "Min": [
+        "25",
+        ">="
+      ],
+      "Max": [
+        "36",
+        "<="
+      ]
+    },
+    {
+      "P_ID": 3,
+      "PLoc": "Lab5",
+      "DeviceName": "Lab5_IDevice19",
+      "operation": "<=",
+      "value": "22"
+    },
+    {
+      "P_ID": 4,
+      "PLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_IDevice6",
+          "operation": ">=",
+          "value": "21"
+        },
+        {
+          "DeviceName": "Hall1_BDevice9",
+          "operation": "=",
+          "value": "Hall1_BDevice13"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BDevice18",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

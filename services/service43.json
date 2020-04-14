@@ -1,0 +1,210 @@
+{
+  "ServiceID": 43,
+  "UserID": 5,
+  "UserPriority": 3,
+  "StartDate": "2018-5-7",
+  "Time": "6-48-00",
+  "Period": 15,
+  "RepeatEvery": [
+    "Th",
+    "Tu",
+    "Su"
+  ],
+  "EndDate": "2018-6-15",
+  "Rules": [
+    {
+      "Ser_ID": 43,
+      "R_ID": 1,
+      "Priority": 5,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice14",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice10",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 43,
+      "R_ID": 2,
+      "Priority": 4,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IDevice17",
+          "operation": "=",
+          "value": "22"
+        },
+        {
+          "DeviceName": "Lab3_IDevice14",
+          "operation": "<=",
+          "value": "30"
+        },
+        {
+          "DeviceName": "Lab3_IDevice17",
+          "Min": [
+            "10",
+            ">"
+          ],
+          "Max": [
+            "36",
+            "<="
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_IDevice13",
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 43,
+      "R_ID": 3,
+      "Priority": 4,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IDevice20",
+          "Min": [
+            "21",
+            ">"
+          ],
+          "Max": [
+            "31",
+            "<"
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BDevice18",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office2_BDevice5",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office2_IDevice4",
+          "value": "Office1_IDevice10"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 43,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IDevice15",
+          "Min": [
+            "23",
+            ">="
+          ],
+          "Max": [
+            "38",
+            "<="
+          ]
+        },
+        {
+          "DeviceName": "Lab3_IDevice17",
+          "Min": [
+            "10",
+            ">"
+          ],
+          "Max": [
+            "32",
+            "<="
+          ]
+        },
+        {
+          "DeviceName": "Lab3_BDevice1",
+          "operation": "=",
+          "value": "Lab3_BDevice4"
+        },
+        {
+          "DeviceName": "Lab3_BDevice2",
+          "operation": "=",
+          "value": "Lab3_BDevice13"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice18",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab3_IDevice11",
+          "value": "Lab3_IDevice14"
+        },
+        {
+          "DeviceName": "Lab3_BDevice15",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab3_IDevice13",
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 43,
+      "R_ID": 5,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IDevice9",
+          "operation": "<=",
+          "value": "Office2_IDevice3"
+        },
+        {
+          "DeviceName": "Office2_BDevice10",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_IDevice16",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 43,
+      "R_ID": 6,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice16",
+          "operation": ">=",
+          "value": "40"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice5",
+          "value": "Lab1_BDevice4"
+        },
+        {
+          "DeviceName": "Lab1_IDevice7",
+          "value": "13"
+        },
+        {
+          "DeviceName": "Lab1_BDevice9",
+          "value": "Lab1_BDevice10"
+        }
+      ]
+    }
+  ]
+}

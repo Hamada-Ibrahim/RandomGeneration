@@ -1,0 +1,230 @@
+{
+  "ServiceID": 3,
+  "UserID": 45,
+  "UserPriority": 4,
+  "StartDate": "2018-3-21",
+  "Time": "4-00-00",
+  "Period": 30,
+  "RepeatEvery": [
+    "We",
+    "Sa",
+    "Mo"
+  ],
+  "EndDate": "2018-4-26",
+  "Rules": [
+    {
+      "Ser_ID": 3,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice19",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice19",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab3_BDevice1",
+          "value": "Lab3_BDevice14"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 2,
+      "Priority": 1,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice11",
+          "operation": "=",
+          "value": "Lab2_BDevice9"
+        },
+        {
+          "DeviceName": "Lab2_IDevice18",
+          "operation": ">=",
+          "value": "11"
+        },
+        {
+          "DeviceName": "Lab2_BDevice14",
+          "operation": "=",
+          "value": "Lab2_BDevice2"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice1",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab2_IDevice6",
+          "value": "Lab2_IDevice15"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice15",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab2_BDevice2",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_IDevice11",
+          "operation": "<=",
+          "value": "34"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_IDevice15",
+          "value": "32"
+        },
+        {
+          "DeviceName": "Lab2_BDevice9",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BDevice15",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_IDevice14",
+          "value": "Lab2_IDevice2"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 4,
+      "Priority": 2,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_IDevice2",
+          "operation": "<=",
+          "value": "Lab2_IDevice5"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_IDevice16",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 5,
+      "Priority": 4,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_IDevice14",
+          "operation": "=",
+          "value": "Office1_IDevice1"
+        },
+        {
+          "DeviceName": "Office1_BDevice7",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office1_BDevice18",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_BDevice2",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office1_IDevice4",
+          "value": "35"
+        },
+        {
+          "DeviceName": "Office1_BDevice19",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office1_BDevice9",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 6,
+      "Priority": 4,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BDevice19",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_IDevice14",
+          "value": "Office2_IDevice4"
+        },
+        {
+          "DeviceName": "Office2_IDevice10",
+          "value": "35"
+        },
+        {
+          "DeviceName": "Office2_BDevice20",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office2_IDevice2",
+          "value": "Office2_IDevice5"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 3,
+      "R_ID": 7,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice13",
+          "operation": "<",
+          "value": "25"
+        },
+        {
+                  "DeviceName": "Lab1_IDevice10",
+                  "operation": "=",
+                  "value": "22"
+                },
+                {
+                  "DeviceName": "Lab1_BDevice3",
+                  "value": "False"
+                }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice17",
+          "value": 10
+        },
+        {
+          "DeviceName": "Lab1_BDevice11",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

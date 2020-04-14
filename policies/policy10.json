@@ -1,0 +1,32 @@
+{
+  "Policy_ID": 10,
+  "UserID": 46,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office3",
+      "DeviceName": "Office3_IDevice12",
+      "Min": [
+        "15",
+        ">="
+      ],
+      "Max": [
+        "39",
+        "<"
+      ]
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Lab3",
+      "DeviceName": "Lab3_IDevice12",
+      "Min": [
+        "22",
+        ">"
+      ],
+      "Max": [
+        "31",
+        "<"
+      ]
+    }
+  ]
+}

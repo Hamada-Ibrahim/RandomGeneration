@@ -1,0 +1,31 @@
+{
+  "Policy_ID": 5,
+  "UserID": 9,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office3",
+      "operatorGroup": {
+        "deviceGroup": [
+          {
+            "DeviceName": "Office3_BDevice20",
+            "value": "True"
+          },
+          {
+            "DeviceName": "Office3_IDevice10",
+            "operation": "<=",
+            "value": "28",
+            "negative": "!"
+          }
+        ],
+        "Operator": "|"
+      }
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Hall4",
+      "DeviceName": "Hall4_BDevice5",
+      "value": "False"
+    }
+  ]
+}

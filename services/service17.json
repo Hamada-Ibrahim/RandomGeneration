@@ -1,0 +1,202 @@
+{
+  "ServiceID": 17,
+  "UserID": 4,
+  "UserPriority": 3,
+  "StartDate": "2018-2-12",
+  "Time": "3-14-00",
+  "Period": 1,
+  "RepeatEvery": [
+    "Sa"
+  ],
+  "EndDate": "2018-9-19",
+  "Rules": [
+    {
+      "Ser_ID": 17,
+      "R_ID": 1,
+      "Priority": 4,
+      "RLoc": "Office3",
+      "conditionGroup": [],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_IDevice5",
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 2,
+      "Priority": 4,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_IDevice4",
+          "Min": [
+            "26",
+            ">"
+          ],
+          "Max": [
+            "33",
+            "<="
+          ]
+        },
+        {
+          "DeviceName": "Office1_IDevice10",
+          "Min": [
+            "31",
+            ">="
+          ],
+          "Max": [
+            "38",
+            "<="
+          ]
+        },
+        {
+          "DeviceName": "Office1_BDevice3",
+          "operation": "=",
+          "value": "Office1_BDevice20"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_IDevice7",
+          "value": "30"
+        },
+        {
+          "DeviceName": "Office1_IDevice2",
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 3,
+      "Priority": 1,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_BDevice16",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office3_IDevice16",
+          "operation": "<=",
+          "value": "36"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BDevice8",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office3_BDevice15",
+          "value": "Office3_BDevice6"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IDevice15",
+          "operation": ">",
+          "value": "30"
+        },
+        {
+          "DeviceName": "Lab3_IDevice10",
+          "operation": "=",
+          "value": "17"
+        },
+        {
+          "DeviceName": "Lab3_IDevice17",
+          "operation": "=",
+          "value": "Lab3_IDevice11"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice18",
+          "value": "Lab3_BDevice18"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 5,
+      "Priority": 2,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_IDevice13",
+          "operation": ">=",
+          "value": "Office3_IDevice4"
+        },
+        {
+          "DeviceName": "Office3_BDevice17",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office3_BDevice15",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_IDevice1",
+          "value": "27"
+        },
+        {
+          "DeviceName": "Office3_BDevice15",
+          "value": "Office3_BDevice2"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 6,
+      "Priority": 4,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IDevice19",
+          "operation": "<",
+          "value": "25"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_IDevice2",
+          "value": "39"
+        },
+        {
+          "DeviceName": "Office2_BDevice18",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office2_BDevice12",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 17,
+      "R_ID": 7,
+      "Priority": 4,
+      "RLoc": "Office3",
+      "conditionGroup": [{
+                          "DeviceName": "Office3_BDevice17",
+                          "value": "False"
+                          }],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_IDevice5",
+          "value": "20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "ServiceID": 4,
+  "UserID": 24,
+  "UserPriority": 1,
+  "StartDate": "2018-1-8",
+  "Time": "2-30-00",
+  "Period": 34,
+  "RepeatEvery": [
+    "Th"
+  ],
+  "EndDate": "2018-3-27",
+  "Rules": [
+    {
+      "Ser_ID": 4,
+      "R_ID": 1,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice15",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice9",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 4,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice11",
+          "operation": "=",
+          "value": "Lab1_IDevice14"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice18",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab1_IDevice15",
+          "value": "18"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 4,
+      "R_ID": 3,
+      "Priority": 2,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDevice19",
+          "operation": "=",
+          "value": "34"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDevice1",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab1_BDevice7",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab1_BDevice4",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 4,
+      "R_ID": 4,
+      "Priority": 5,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice14",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDevice11",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab3_BDevice10",
+          "value": "Lab3_BDevice12"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 4,
+      "R_ID": 5,
+      "Priority": 5,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BDevice9",
+          "operation": "=",
+          "value": "Lab2_BDevice12"
+        },
+        {
+          "DeviceName": "Lab2_BDevice9",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_IDevice10",
+          "value": "11"
+        }
+      ]
+    }
+  ]
+}
