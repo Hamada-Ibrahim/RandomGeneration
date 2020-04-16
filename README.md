@@ -1,7 +1,4 @@
 # RandomGeneration
-These are a random generation dataset of automation services and system policies, which are used in Rule Verification 
-Framework (RVF) for the sake of assessing its stability and scalability.
-
 For the sake of assessing our Rule Verification Framework (RVF) stability and scalability, we develop a small virtual building
 automation to generate a number of automation services and policies, called Random Generation test cases.
 
