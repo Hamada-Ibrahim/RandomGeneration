@@ -1,0 +1,126 @@
+{
+  "ServiceID": 1,
+  "UserID": 83,
+  "UserPriority": 2,
+  "StartDate": "2018-1-30",
+  "Time": "0-47-00",
+  "Period": 14,
+  "RepeatEvery": [
+    "Th",
+    "Tu"
+  ],
+  "EndDate": "2018-11-14",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IlgtsTmr",
+          "operation": ">=",
+          "value": 1
+        },
+         {
+          "DeviceName": "Lab3_BMtn",
+          "value": "False"
+        } 
+      ],
+      "actionGroup": [
+         {
+          "function": {
+            "LHS": ["Lab3_IlgtsTmr","",""],
+            "RHS": ["Lab3_IlgtsTmr","1","+"],
+            "operator": "="
+          }
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_IlgtsTmr",
+          "operation": ">=",
+          "value": 1
+        },
+          {
+          "DeviceName": "Lab3_BMtn",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab3_IlgtsTmr",
+          "operation": "<",
+          "value": 120
+        }
+      ],
+      "actionGroup": [
+       {
+          "function": {
+            "LHS": ["Lab3_IlgtsTmr","",""],
+            "RHS": ["Lab3_IlgtsTmr","1","+"],
+            "operator": "="
+          }
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_BChkExtLgt",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab3_BLgts",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab3_IExtLgt",
+          "operation": "<=",
+          "value": 5
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BLgts",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 4,
+      "Priority": 1,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_BChkExtLgt",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab3_BLgts",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab3_IExtLgt",
+          "operation": "<=",
+          "value": 4
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BLgts",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

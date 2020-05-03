@@ -1,0 +1,41 @@
+{
+  "Policy_ID": 1,
+  "UserID": 5,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab4",
+      "operatorGroup": {
+        "deviceGroup": [
+          {
+            "DeviceName": "Lab4_BLm",
+            "value": "True"
+          },
+          {
+            "DeviceName": "Lab4_BBm",
+            "value": "True"
+          }
+        ],
+        "Operator": "&",
+        "Negation": "!"
+      }
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Lab4",
+      "operatorGroup": {
+        "deviceGroup": [
+          {
+            "DeviceName": "Lab4_BLa",
+            "value": "True"
+          },
+          {
+            "DeviceName": "Lab4_BBa",
+            "value": "True"
+          }
+        ],
+        "Operator": "&",
+        "Negation": "!"
+      }
+    }]
+}

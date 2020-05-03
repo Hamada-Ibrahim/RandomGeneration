@@ -1,0 +1,198 @@
+{
+  "ServiceID": 1,
+  "UserID": 51,
+  "UserPriority": 2,
+  "StartDate": "2018-3-14",
+  "Time": "11-25-40",
+  "Period": 7,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2018-8-13",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IT" , "Lab2_IC" , " - "],
+                         "RHS": [ "2", "",""],
+                         "operator":">"
+                        }
+          },
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab2_IC",
+          "operation": "=",
+          "value": "Lab2_IT"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IT" , "Lab2_IC" , " - "],
+                         "RHS": [ "2", "",""],
+                         "operator":">"
+                        }
+          },
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BF",
+          "operation": "=",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab2_IC",
+          "operation": "=",
+          "value": "Lab2_IT"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IT" , "Lab2_IC" , " - "],
+                         "RHS": [ "2", "",""],
+                         "operator":">"
+                        }
+          },
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IT" , "Lab2_IC" , " - "],
+                         "RHS": [ "8", "",""],
+                         "operator":">"
+                        }
+          }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "False"
+        },
+        {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IC" , "" , ""],
+                         "RHS": [ "Lab2_IT", "1","+"],
+                         "operator":"="
+                        }
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 5,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BR",
+          "operation": "=",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 6,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BR",
+          "operation": "=",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BW",
+          "operation": "=",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+          {
+            "function":
+                        {
+                         "LHS" : [ "Lab2_IC" , "" , ""],
+                         "RHS": [ "Lab2_IT", "1","+"],
+                         "operator":"="
+                        }
+          }
+      ]
+    }
+  ]
+}

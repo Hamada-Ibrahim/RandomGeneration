@@ -1,0 +1,20 @@
+{
+  "Policy_ID": 1,
+  "UserID": 5,
+  "Constraints": [
+      {
+      "P_ID": 1,
+      "PLoc": "Lab3",
+      "DeviceName": "Lab3_IExtLgt",
+      "Min": ["0", ">="],
+      "Max": ["10", "<="]
+    },
+      {
+      "P_ID": 2,
+      "PLoc": "Lab3",
+      "DeviceName": "Lab3_IlgtsTmr",
+      "Min": ["0", ">="],
+      "Max": ["120", "<="]
+    }
+]
+}

@@ -1,0 +1,345 @@
+{
+  "ServiceID": 1,
+  "UserID": 51,
+  "UserPriority": 2,
+  "StartDate": "2018-3-14",
+  "Time": "11-25-00",
+  "Period": 7,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2018-8-13",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLm",
+          "value": "True"
+        },
+         {
+          "DeviceName": "Lab4_BLl",
+          "value": "False"
+        } 
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BLl",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 3,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBl",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 4,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 5,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BBm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 6,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBl",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 7,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBl",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+      ]
+    },
+      {
+      "Ser_ID": 1,
+      "R_ID": 8,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBl",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        },
+         {
+          "DeviceName": "Lab4_BBa",
+          "value": "False"
+        } 
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+      ]
+    },
+      {
+      "Ser_ID": 1,
+      "R_ID": 9,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BLl",
+          "value": "False"
+        }
+         
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+      ]
+    },
+      {
+      "Ser_ID": 1,
+      "R_ID": 10,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+         
+      ],
+      "actionGroup": [
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "Lab4_BLa"
+        }
+      ]
+    },
+      {
+      "Ser_ID": 1,
+      "R_ID": 11,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BBa",
+          "value": "True"
+        }
+         
+      ],
+      "actionGroup": [
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "Lab4_BBa"
+        }
+      ]
+    },
+      {
+      "Ser_ID": 1,
+      "R_ID": 12,
+      "Priority": 1,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab4_BLm",
+          "value": "False"
+        },
+          {
+          "DeviceName": "Lab4_BLa",
+          "value": "True"
+        }
+         
+      ],
+      "actionGroup": [
+          {
+          "DeviceName": "Lab4_BLa",
+          "operation": "=",
+          "negative":"!",
+          "value": "Lab4_BLa"
+        }
+      ]
+    }
+  ]
+}

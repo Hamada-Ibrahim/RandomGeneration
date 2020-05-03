@@ -1,0 +1,167 @@
+{
+  "ServiceID": 1,
+  "UserID": 51,
+  "UserPriority": 2,
+  "StartDate": "2018-3-14",
+  "Time": "11-25-40",
+  "Period": 7,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2018-8-13",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "operation": "<",
+          "value": 16
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_Bheating",
+          "operation": "=",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "operation": ">",
+          "value": 18
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_Bheating",
+          "operation": "=",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 3,
+      "Priority": 5,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "Min": [
+            "30",
+            ">"
+          ],
+          "Max": [
+            "30",
+            "<"
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BtempAlarm",
+          "operation": "=",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 4,
+      "Priority": 4,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "operation": ">=",
+          "value": 1000
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BtempAlarm",
+          "operation": "=",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 5,
+      "Priority": 4,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "operation": "=",
+          "value": 14
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_Bheating",
+          "operation": "=",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 6,
+      "Priority": 2,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_Itemperature",
+          "operation": ">",
+          "value": 20
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_Bheating",
+          "operation": "=",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 7,
+      "Priority": 2,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+          {
+          "DeviceName": "Lab2_Itemperature",
+          "Min": [
+            "15",
+            ">"
+          ],
+          "Max": [
+            "50",
+            "<"
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BtempAlarm",
+          "operation": "=",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Policy_ID": 22,
+  "UserID": 75,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab2",
+      "operatorGroup": {
+        "deviceGroup": [
+          {
+            "DeviceName": "Lab2_BF",
+            "value": "False",
+            "negative": "!"
+          },
+          {
+            "DeviceName": "Lab2_BW",
+            "value": "True"
+          }
+        ],
+        "Operator": "|"
+      }
+    },
+    {
+      "P_ID": 2,
+      "PLoc": "Lab2",
+      "operatorGroup": {
+        "deviceGroup": [
+          {
+            "DeviceName": "Lab2_BR",
+            "value": "True"
+          },
+          {
+            "DeviceName": "Lab2_BW",
+            "value": "True"
+          }
+        ],
+        "Operator": "&",
+        "Negation": "!"
+      }
+    },
+{
+      "P_ID": 3,
+      "PLoc": "Lab2",
+      "DeviceName": "Lab2_IC",
+      "Min": ["0", ">="],
+      "Max": ["120", "<="]
+    },
+    {
+      "P_ID": 4,
+      "PLoc": "Lab2",
+      "DeviceName": "Lab2_IT",
+      "Min": ["0", ">="],
+      "Max": ["120", "<="]
+    }
+]
+}
