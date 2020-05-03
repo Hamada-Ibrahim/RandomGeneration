@@ -1,0 +1,42 @@
+{
+  "ServiceID": 5,
+  "UserID": 5,
+  "UserPriority": 2,
+  "StartDate": "2018-3-14",
+  "Time": "11-25-40",
+  "Period": 7,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2018-8-13",
+  "Rules": [
+    {
+      "Ser_ID": 5,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_ITemperature",
+          "operation": ">",
+          "value": 25
+        },
+        {
+          "DeviceName": "Lab2_BInfrared",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BAC",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BFan",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

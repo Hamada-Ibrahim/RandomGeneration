@@ -1,0 +1,39 @@
+{
+  "ServiceID": 3,
+  "UserID": 3,
+  "UserPriority": 1,
+  "StartDate": "2018-3-14",
+  "Time": "11-25-40",
+  "Period": 7,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2018-8-13",
+  "Rules": [
+    {
+      "Ser_ID": 3,
+      "R_ID": 1,
+      "Priority": 1,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_ITime",
+          "Min": ["7",">="],
+          "Max": ["8","<="]
+        },
+        {
+          "DeviceName": "Lab2_IIllumination",
+          "operation": ">",
+          "value": 80
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BLamp",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}
